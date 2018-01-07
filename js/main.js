@@ -104,3 +104,28 @@ function openConMe() {
 	};
 	console.log(window.screen.availWidth);
 }
+// {event} Parallax PORTFOLIO work
+var container = document.querySelectorAll('.boxWork');
+for (i = 0; i < container.length; i++) {
+	container[i].onmousemove = function(e) {
+		var x = e.offsetX == undefined ? e.layerX : e.offsetX;
+		 		y = e.offsetY == undefined ? e.layerY : e.offsetY,
+				img = this.querySelector('.boxWork img'),
+				computedStyle = getComputedStyle(this);
+		img.style.transform = 'translate(-' + x / 150 + 'px ,-' + y / 150 + 'px)';
+	}
+//{event} Hover view Title
+	container[i].onmouseenter = function () {
+		title = this.querySelector('.boxWork__title');
+		title.classList.add('view');
+		title.classList.add('openTitle');
+	}
+	container[i].onmouseleave = function () {
+		title = this.querySelector('.boxWork__title');
+		title.classList.remove('openTitle');
+		title.classList.add('closeTitle');
+		setTimeout("title.classList.remove('view')", 1000);
+		setTimeout("title.classList.remove('closeTitle')", 1100);
+	}
+
+}

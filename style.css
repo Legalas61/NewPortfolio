@@ -2,9 +2,8 @@
 	margin: 0;
 	padding: 0;
   font-family: 'Roboto', sans-serif;
-	background: #1A1A1A;
 }
-
+body,header{	background: #191919;}
 p {
 	font-size: 16px;
 	color: #fff;
@@ -125,6 +124,7 @@ dl{
 }
 
 .portfolio {
+	box-sizing: border-box;
   list-style: none;
 	margin-top: 150px;
 	display: flex;
@@ -176,14 +176,33 @@ dl{
 
 .portfolioCase {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
+	flex-basis: 50%;
+	flex-wrap: wrap;
 }
 
 .portfolioCase img {
-	flex-basis: 33.33%;
-	margin-top: 5%;
+	padding: 5% 0;
+	width: 50%;
+	margin: 0 auto;
 }
+
+.boxWork{
+	margin-top: 50px;
+	background-color: #212121;
+	width: 40%;
+	margin-left: 10%;
+}
+.boxWork__title{
+	width: 100%;
+	position: relative;
+	background-color: #fff;
+	text-align: center;
+	color:black;
+	bottom: 10px;
+	padding: 5% 0;
+}
+/* end PORTFOLIO */
 
 .Experience {
 	margin-top: 5%;
@@ -236,6 +255,9 @@ dl{
 }
 
 .cap {
+	padding-bottom: 10px;
+  line-height: 1.56;
+	display: block;
 	color: #565656;
 }
 
@@ -261,18 +283,17 @@ dl{
 .rih2 p {
 	margin-top: -1%;
 }
-
 .Front,
 .WebDevelopment,
 .Design,
 .Soft,
-.All {
+.All,
+.boxWork__title{
 	display: none;
 }
 
 .view {
 	display: block;
-
 }
 
 .active {
@@ -466,7 +487,12 @@ dl{
 .menuLi {
 	animation: menuLi .3s forwards;
 }
-
+.openTitle{
+	animation: openTrans 1s forwards;
+}
+.closeTitle{
+	animation: closeTrans 1s forwards;
+}
 @keyframes menu {
 	from {
 		margin-top: 0vw;
@@ -482,5 +508,25 @@ dl{
 	}
 	to {
 		margin-top: 6vw;
+	}
+}
+@keyframes openTrans {
+	from{
+		transform: rotateX(101deg);
+		opacity: 0;
+	}
+	to{
+		transform: rotateX(0);
+		opacity: 1;
+	}
+}
+@keyframes closeTrans {
+	from{
+		transform: rotateX(0);
+		opacity: 1;
+	}
+	to{
+		transform: rotateX(101deg);
+		opacity: 0;
 	}
 }

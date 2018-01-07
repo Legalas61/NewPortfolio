@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -18,18 +18,21 @@
     	<path d="M24,19c0-0.6-0.4-1-1-1H1c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V19z"/>
 		</svg>
     <menu>
-      <li><a href="#hello">Hello</a></li>
-      <li><a href="#portfolio">PORTFOLIO</a></li>
-      <li><a href="#Experience">Experience</a></li>
-      <li><a href="#Feedback">Feedback</a></li>
-      <li class="contact" onclick="openConMe()">CONTACT ME</li>
-      <li class="btn btnClose" onclick="closeMenu()">Go SV</li>
+      <li><a href="#hello">Привет</a></li>
+      <li><a href="#portfolio">Портфолио</a></li>
+      <li><a href="#Experience">Опыт</a></li>
+      <li><a href="#Feedback">Отзывы</a></li>
+      <li class="contact" onclick="openConMe()">Связаться со мной</li>
+      <li class="btn btnClose" onclick="closeMenu()">Вернуться</li>
     </menu>
   </header>
   <a id="hello"></a>
   <div class="hello">
     <dl>
-      <dt><p class="aboutMe">I am Danny Falcon I am a Web Developer located in Hartford, Connecticut. I currently work as a part time Remote Junior Web Developer for Coolor, located in Las Vegas. I am looking to take on more work and to increase my skills as a Web Developer.</p></dt>
+      <dt><p class="aboutMe">Привет! Меня зовут Дмитрий я веб-разработчик в
+        данный момент живу в городе Шахты (Ростовская область). В настоящее
+        время работаю в качестве удаленного работника над несколькими проектами.
+         В планах перебрать в другой город и начать работать в офисе.</p></dt>
       <dd class="contact" onclick="openUp()">CONTACT ME</dd>
       <dd class="btn">DOWNLOAD CV</dd>
     </dl>
@@ -37,14 +40,21 @@
   </div>
   <a id="portfolio"></a>
    <ul class="portfolio">
-     <li class="FRONTEND" onclick="frontEnd()">FRONTEND</li>
+     <li class="FRONTEND" onclick="frontEnd()">FRONT END</li>
      <li class="web" onclick="WebDevelopment()">Web Development</li>
-     <li class="Designs" onclick="Design()">Designs</li>
-     <li class="Software" onclick="Software()">Software</li>
+     <li class="Designs" onclick="Design()">Дизайн</li>
+     <li class="Software" onclick="Software()">Программы</li>
      <li class="AllWorks" onclick="All()">Все</li>
     </ul>
   <div class="portfolioCase">
-    <img src="img/logo.svg" alt="" class="All Front">
+    <div class="boxWork">
+      <img src="img/car.svg" alt="Анимированная машинка при помаши SVG"
+            class="All Front">
+      <a href="#" class="boxWork__title">SVG анимация</a>
+    </div>
+    <div class="boxWork">
+      <img src="img/logo.svg" alt="" class="All Front">
+    </div>
     <img src="img/logo.svg" alt="" class="All Front">
     <img src="img/logo.svg" alt="" class="All WebDevelopment">
     <img src="img/logo.svg" alt="" class="All Design">
@@ -55,8 +65,10 @@
   <a id="Experience"></a>
   <div class="Experience">
     <div class="left">
-      <h2>Experience</h2>
-      <p>I partner with startups, organizations and Fortune 500 companies to build digital products that help clients overcome challenges and create lasting connections with millions of people every day.</p>
+      <h2>Опыт</h2>
+      <p>Я работал в стартапах, организациях создавал для них цифровые продукты,
+         которые помогают их клиентам получать необходимую информацию и просто
+         делая их счастливее.</p>
     </div>
     <div class="rih">
       <div class="block">
@@ -93,7 +105,7 @@
 		c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z"/>
 	</svg></a>
         <!--vk--><a href="#">
-			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 512 512" xml:space="preserve">
 			<path class="st0" d="M440.6,295.4c17,16.6,34.9,32.2,50.1,50.4c6.7,8.1,13.1,16.5,18,25.9
 		c6.9,13.4,0.7,28.1-11.3,28.9l-74.6,0c-19.2,1.6-34.6-6.1-47.5-19.3c-10.3-10.5-19.9-21.7-29.8-32.6c-4.1-4.4-8.3-8.6-13.4-11.9
@@ -162,21 +174,22 @@
 </svg></a>
         <!--end-->
       </div>
-      <div class="closeUp" onclick="closeUp()">Go SV</div>
+      <div class="closeUp" onclick="closeUp()">Назад</div>
     </div>
   </div>
   <a id="Feedback"></a>
   <div class="Experience">
     <div class="left">
-      <h2>Feedback</h2>
-      <p>Take a look at the reviews of my customers and ensure the quality of my services.</p>
+      <h2>Отзывы</h2>
+      <p>Взгляните на отзывы моих клиентов</p>
     </div>
     <div class="rih2">
       <div class="block">
         <img src="img/l2iPf-EJThc.jpg" alt="">
         <h3 class="Experience1">Web Developer</h3>
-        <p class="cap">Coolor Studio</p>
-        <p>CEO <br> Designed and developed user-friendly website, including optimized check-out page that increased user clicks, and subsequently customer purchases by 20%.</p>
+        <a href="#" class="cap">Антон Гладков</a>
+        <p>Сотрудничеством доволен, пожелания были учтены, результат понравился.
+            <br> Рекомендую (заказывал анимированую иконку)</p>
       </div>
       <div class="block">
         <img src="img/l2iPf-EJThc.jpg" alt="">
@@ -194,5 +207,4 @@
   </div>
   <script src="js/main.js"></script>
 </body>
-
 </html>
