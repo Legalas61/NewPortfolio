@@ -124,8 +124,8 @@ for (i = 0; i < container.length; i++) {
 		title = this.querySelector('.boxWork__title');
 		title.classList.remove('openTitle');
 		title.classList.add('closeTitle');
-		setTimeout("title.classList.remove('view')", 1000);
-		setTimeout("title.classList.remove('closeTitle')", 1100);
+		setTimeout("title.classList.remove('view')", 900);
+		setTimeout("title.classList.remove('closeTitle')", 900);
 	}
 
 }
