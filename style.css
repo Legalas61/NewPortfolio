@@ -6,6 +6,7 @@
 
 body, header {
   background: #191919;
+  scroll-behavior: smooth;
 }
 
 p {
@@ -203,16 +204,16 @@ dl {
   margin-top: 50px;
   background-color: #212121;
   width: 40%;
-  margin-left: 10%;
+  margin-left: 5%;
+  border-radius: 15px;
+  padding-bottom: 15px;
 }
 
 .boxWork__title {
   width: 100%;
   position: relative;
-  background-color: #fff;
   text-align: center;
-  color: #212121;
-  padding: 5% 0;
+  color: #fff;
 }
 
 /* end PORTFOLIO */
@@ -267,6 +268,9 @@ dl {
   line-height: 1.56;
 }
 
+a.cap{
+  cursor: pointer;
+}
 .cap {
   padding-bottom: 10px;
   line-height: 1.56;
