@@ -211,7 +211,8 @@ dl {
 
 .boxWork__title {
   width: 100%;
-  position: relative;
+  display: block;
+  opacity: 0;
   text-align: center;
   color: #fff;
 }
@@ -301,7 +302,7 @@ a.cap{
   margin-top: -1%;
 }
 
-.Front, .WebDevelopment, .Design, .Soft, .All, .boxWork__title {
+.Front, .WebDevelopment, .Design, .Soft, .All {
   display: none;
 }
 
@@ -386,6 +387,12 @@ a.cap{
   cursor: pointer;
   display: none;
 }
+
+.boxWork:hover .boxWork__title{
+  text-align: center;
+  animation: openTrans 1s forwards;
+}
+
 
 @media screen and (max-width:1130px) {
   body {

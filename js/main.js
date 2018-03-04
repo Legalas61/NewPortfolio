@@ -114,19 +114,4 @@ for (i = 0; i < container.length; i++) {
 				computedStyle = getComputedStyle(this);
 		img.style.transform = 'translate(-' + x / 150 + 'px ,-' + y / 150 + 'px)';
 	}
-//{event} Hover view Title
-//	container[i].onmouseenter = function () {
-//		title = this.querySelector('.boxWork__title');
-//		title.classList.add('view');
-//		title.classList.add('openTitle');
-//	}
-//	container[i].onmouseleave = function () {
-//		title = this.querySelector('.boxWork__title');
-//		title.classList.remove('openTitle');
-//		title.classList.add('closeTitle');
-//		setTimeout("title.classList.remove('view')", 900);
-//    title.classList.remove('closeTitle')
-//		setTimeout("title.classList.remove('closeTitle')", 900);
-//	}
-
 }
