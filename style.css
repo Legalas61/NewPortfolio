@@ -5,18 +5,18 @@
 }
 
 body, header {
-  background: #191919;
+  background: #242424;
   scroll-behavior: smooth;
 }
 
 p {
   font-size: 16px;
-  color: #fff;
+  color: #ccc;
 }
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #ccc;
 }
 
 a:hover {
@@ -37,7 +37,7 @@ header {
   z-index: 1;
   width: 100%;
   position: fixed;
-  border-bottom: 1px solid rgba(218, 98, 93, 0.1);
+  border-bottom: 1px dashed rgba(218, 98, 93, 0.1);
 }
 
 header .contact {
@@ -54,7 +54,7 @@ header img {
 }
 
 header svg {
-  fill: #fff;
+  fill: #ccc;
   cursor: pointer;
   height: 50px;
   display: none;
@@ -105,7 +105,7 @@ dl {
   padding: 20px 50px;
   border-radius: 2px;
   box-shadow: none;
-  color: #fff;
+  color: #ccc;
 }
 
 .hello dd:first-of-type {
@@ -122,15 +122,15 @@ dl {
 }
 
 .contact:hover {
-  color: #fff;
+  color: #ccc;
 }
 
 .btn {
-  border: 1px solid #fff;
+  border: 1px dashed #ccc;
 }
 
 .btn:hover {
-  border: 1px solid rgb(218, 98, 93);
+  border: 1px dashed rgb(218, 98, 93);
 }
 
 .socIcon svg:hover, .active, .portfolio li, .btn:hover, .contact {
@@ -144,12 +144,11 @@ dl {
   margin-top: 150px;
   display: flex;
   justify-content: center;
-  color: #fff;
+  color: #ccc;
   text-transform: uppercase;
 }
 
 .portfolio li {
-  widows: 100px;
   font-size: 18px;
   cursor: pointer;
 }
@@ -197,6 +196,7 @@ dl {
 .portfolioCase img {
   padding: 1% 0;
   width: 50%;
+  border-radius: 50%;
   margin: 0 auto;
 }
 
@@ -214,7 +214,7 @@ dl {
   display: block;
   opacity: 0;
   text-align: center;
-  color: #fff;
+  color: #ccc;
 }
 
 /* end PORTFOLIO */
@@ -222,7 +222,7 @@ dl {
 .Experience {
   margin-top: 5%;
   display: flex;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px dashed grey;
   padding-bottom: 20px;
 }
 
@@ -251,7 +251,7 @@ dl {
   padding-top: 1%;
   width: 90%;
   padding-bottom: 0.5%;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px dashed grey;
 }
 
 .block:last-child {
@@ -354,8 +354,8 @@ a.cap{
   display: block;
   padding: 1.7%;
   border-radius: 2px;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #ccc;
+  border: 1px dashed #ccc;
   background: none;
   width: 20%;
   height: 5%;
@@ -420,7 +420,7 @@ a.cap{
     display: block;
     text-align: center;
     padding: 7% 0;
-    color: #fff;
+    color: #ccc;
     margin-top: 5vw;
   }
   menu li {

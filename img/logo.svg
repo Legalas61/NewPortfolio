@@ -1,7 +1,7 @@
 <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" width="236.5" height="113.365" viewBox="0 0 236.5 113.365">
   <defs>
     <style>
-      .cls-1 {fill: #333;}.cls-2, .cls-3 {fill: none;stroke-miterlimit: 10;}.cls-2 {stroke: #b92b2e;}.cls-3 {stroke: #333;stroke-width: 4px;stroke-dasharray: 800;stroke-dashoffset: 800;animation: dash 3s linear forwards;}@-webkit-keyframes dash {to {stroke-dashoffset: 0;}
+      .cls-1 {fill: #CCCCCC;}.cls-2, .cls-3 {fill: none;stroke-miterlimit: 10;}.cls-2 {stroke: #b92b2e;}.cls-3 {stroke: #333;stroke-width: 4px;stroke-dasharray: 800;stroke-dashoffset: 800;animation: dash 3s linear forwards;}@-webkit-keyframes dash {to {stroke-dashoffset: 0;}
     </style>
   </defs>
   <title>Dmitry Koptelov - Software &amp; Front-end Developer</title><desc>My personal logo</desc>
